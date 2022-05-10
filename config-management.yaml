@@ -1,0 +1,19 @@
+# config-management.yaml
+
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  enableMultiRepo: true
+  enableLegacyFields: true
+  policyController:
+    enabled: true
+  clusterName: krmapihost-nauvoo-test-cc
+  git:
+    policyDir: /infrastructure
+    secretType: ssh
+    gcpServiceAccountEmail: config-sync-sa@nauvoo-transcribe-test.iam.gserviceaccount.com
+    syncBranch: main
+    syncRepo: https://github.com/skittleBeans/scaling-pancake
+  sourceFormat: unstructured
