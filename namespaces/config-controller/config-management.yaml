@@ -11,8 +11,8 @@ spec:
     enabled: true
   clusterName: krmapihost-nauvoo-test-cc
   git:
-    policyDir: /infrastructure
+    policyDir: /quickstart/config-sync
     secretType: none
     syncBranch: main
-    syncRepo: https://github.com/skittleBeans/scaling-pancake
-  sourceFormat: unstructured
+    syncRepo: https://github.com/GoogleCloudPlatform/anthos-config-management-samples
+  sourceFormat: hierarchy 
