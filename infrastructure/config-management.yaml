@@ -12,7 +12,7 @@ spec:
   clusterName: krmapihost-nauvoo-test-cc
   git:
     policyDir: /infrastructure
-    secretType: ssh
+    secretType: none
     syncBranch: main
     syncRepo: https://github.com/skittleBeans/scaling-pancake
   sourceFormat: unstructured
